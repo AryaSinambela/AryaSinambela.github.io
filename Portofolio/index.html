@@ -34,6 +34,31 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
+  <!-- Tambahan CSS agar Dropdown Aktif di Segala Situasi (Desktop Hover & Mobile Click) -->
+  <style>
+    @media (min-width: 1200px) {
+      .navmenu .dropdown:hover > ul {
+        opacity: 1 !important;
+        top: 100% !important;
+        visibility: visible !important;
+        display: block !important;
+      }
+      .navmenu .dropdown > ul {
+        transition: all 0.3s ease-in-out;
+      }
+    }
+    @media (max-width: 1199px) {
+      .navmenu .dropdown:active > ul,
+      .navmenu .dropdown:focus > ul,
+      .navmenu .dropdown > a:focus + ul {
+        display: block !important;
+        position: static !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+      }
+    }
+  </style>
 </head>
 
 <body class="index-page">
@@ -42,8 +67,6 @@
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <!-- Jika ingin menggunakan logo gambar, hapus komentar di bawah ini -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
         <h1 class="sitename">Arya P.S</h1>
       </a>
 
@@ -54,21 +77,12 @@
           <li><a href="resume.html">Resume</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <!-- Dropdown Baru yang Mendukung Semua Kemampuan & Aktif di Segala Situasi -->
+          <li class="dropdown"><a href="#"><span>Projects Docs</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
+              <li><a href="portfolio.html?filter=uiux">UI/UX Documentation</a></li>
+              <li><a href="portfolio.html?filter=backend">Backend Development</a></li>
+              <li><a href="portfolio.html?filter=analysis">Systems Analysis &amp; Design</a></li>
             </ul>
           </li>
           <li><a href="contact.html">Contact</a></li>
@@ -88,11 +102,11 @@
 
   <main class="main">
 
-<!-- Hero Section -->
+    <!-- Hero Section -->
     <section id="hero" class="hero section">
 
-      <!-- Diubah dari assets/img/hero-bg.jpg menjadi assets/img/Arya.jpeg -->
-      <img src="assets/img/Arya.jpeg" alt="Arya Pratama Sinambela" data-aos="fade-in">
+      <!-- Mengatur gambar Arya agar fokus posisi dari atas supaya tidak terpotong -->
+      <img src="assets/img/Arya.jpeg" alt="Arya Pratama Sinambela" data-aos="fade-in" style="object-position: top;">
 
       <div class="container text-center" data-aos="zoom-out" data-aos-delay="100">
         <div class="row justify-content-center">
@@ -121,7 +135,7 @@
         <a href="https://www.linkedin.com/in/arya-pratama-sinambela" target="_blank"><i class="bi bi-linkedin"></i></a>
       </div>
       <div class="credits">
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> | <a href="https://bootstrapmade.com/tools/">DevTools</a>
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
 
