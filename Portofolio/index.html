@@ -35,8 +35,23 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 
-  <!-- Tambahan CSS agar Dropdown Aktif di Segala Situasi (Desktop Hover & Mobile Click) -->
+  <!-- CSS agar Dropdown Aktif di Segala Situasi (Desktop Hover & Mobile Click) -->
+  <!-- CSS Perbaikan Dropdown Tertutup Lapisan Abu-abu -->
   <style>
+    /* 1. Menaikkan z-index seluruh elemen navigasi agar kotak tidak tertutup */
+    .navmenu {
+      position: relative;
+      z-index: 9999 !important;
+    }
+
+    /* 2. Memastikan kotak dropdown berada di lapisan paling depan */
+    .navmenu .dropdown > ul {
+      z-index: 99999 !important;
+      background-color: #ffffff !important; /* Memastikan latar belakang kotak tetap putih bersih */
+      box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1) !important; /* Memberikan bayangan agar kontras */
+    }
+
+    /* 3. Pengaturan kemunculan dropdown di Desktop (Hover) */
     @media (min-width: 1200px) {
       .navmenu .dropdown:hover > ul {
         opacity: 1 !important;
@@ -48,7 +63,9 @@
         transition: all 0.3s ease-in-out;
       }
     }
-    @media (max-width: 1199px) {
+
+    /* 4. Pengaturan untuk Mobile (Layar Sentuh) */
+    @media (max-width: 1119px) {
       .navmenu .dropdown:active > ul,
       .navmenu .dropdown:focus > ul,
       .navmenu .dropdown > a:focus + ul {
@@ -77,11 +94,11 @@
           <li><a href="resume.html">Resume</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
-          <!-- Dropdown Baru yang Mendukung Semua Kemampuan & Aktif di Segala Situasi -->
-          <li class="dropdown"><a href="#"><span>Projects Docs</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <!-- Dropdown utama diubah menjadi Github Documentation -->
+          <li class="dropdown"><a href="#"><span>Github Documentation</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="portfolio.html?filter=uiux">UI/UX Documentation</a></li>
               <li><a href="portfolio.html?filter=backend">Backend Development</a></li>
+              <li><a href="portfolio.html?filter=uiux">UI/UX Documentation</a></li>
               <li><a href="portfolio.html?filter=analysis">Systems Analysis &amp; Design</a></li>
             </ul>
           </li>

@@ -45,13 +45,21 @@
         <h1 class="sitename">Arya P.S</h1>
       </a>
 
-      <nav id="navmenu" class="navmenu">
+<nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="resume.html" class="active">Resume</a></li>
+          <li><a href="resume.html">Resume</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
+          <!-- Dropdown Konsisten yang Wajib Ada di Semua Halaman -->
+          <li class="dropdown"><a href="#"><span>Github Documentation</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="portfolio.html?filter=backend">Backend Development</a></li>
+              <li><a href="portfolio.html?filter=uiux">UI/UX Documentation</a></li>
+              <li><a href="portfolio.html?filter=analysis">Systems Analysis &amp; Design</a></li>
+            </ul>
+          </li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
