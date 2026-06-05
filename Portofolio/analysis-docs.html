@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Systems Analysis & Design - Arya Pratama Sinambela</title>
+  <meta name="description" content="Dokumentasi Analisis dan Perancangan Sistem Arya Pratama Sinambela">
+  <meta name="keywords" content="Systems Analysis, UML, ERD, SDLC, Antony Mart, IT Del">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    header, 
+    .header, 
+    .header.sticky-top,
+    header.light-background {
+      border-bottom: none !important;
+      box-shadow: none !important;
+      background: #ffffff !important;
+    }
+
+    .navmenu {
+      position: relative;
+      z-index: 9999 !important;
+    }
+    
+    .navmenu .dropdown > ul {
+      z-index: 99999 !important;
+      background-color: #ffffff !important;
+      box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.1) !important;
+    }
+
+    @media (min-width: 1200px) {
+      .navmenu .dropdown:hover > ul {
+        opacity: 1 !important;
+        top: 100% !important;
+        visibility: visible !important;
+        display: block !important;
+      }
+      .navmenu .dropdown > ul {
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  </style>
+</head>
+
+<body class="starter-page-page">
+
+  <header id="header" class="header d-flex align-items-center light-background sticky-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <h1 class="sitename">Arya P.S</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li class="dropdown"><a href="#" class="active"><span>Github Documentation</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="backend-docs.html">Backend Development</a></li>
+              <li><a href="uiux-docs.html">UI/UX Documentation</a></li>
+              <li><a href="analysis-docs.html" class="active">Systems Analysis &amp; Design</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <div class="header-social-links">
+        <a href="https://x.com/SinambelaArya" target="_blank" class="twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://web.facebook.com/profile.php?id=100025205535819" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/arya_sinambela" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/arya-pratama-sinambela" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section id="starter-section" class="starter-section section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Systems Analysis &amp; Design</h2>
+        <p>Dokumentasi metodologi pengembangan sistem, pemodelan alur kerja bisnis (BPM), serta arsitektur basis data relasional sebelum fase implementasi.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-12">
+            <h3>Sistem Manajemen Ritel "Antony Mart"</h3>
+            <p>Proyek Antony Mart merupakan pengembangan sistem perangkat lunak untuk memfasilitasi kebutuhan operasional minimarket, yang mencakup manajemen inventaris barang, pencatatan transaksi kasir (Point of Sale), serta pelaporan penjualan. Peran utama saya dalam proyek ini berfokus pada tahapan awal SDLC (<em>Software Development Life Cycle</em>), yaitu mengubah kebutuhan bisnis menjadi model arsitektur sistem yang komprehensif.</p>
+
+            <h5 class="mt-4">Analisis Kebutuhan & Metodologi</h5>
+            <p>Pengembangan sistem ini mengadopsi pendekatan struktural. Proses diawali dengan elisitasi kebutuhan sistem (<em>Requirements Gathering</em>) untuk mengidentifikasi entitas utama yang berinteraksi dengan aplikasi, yaitu <strong>Kasir</strong>, <strong>Admin Gudang</strong>, dan <strong>Pemilik (Owner)</strong>. Sistem dirancang untuk dapat meminimalisir kesalahan pencatatan manual dan mempercepat proses <em>checkout</em> pelanggan.</p>
+
+            <h5 class="mt-4">Pemodelan Visual Sistem (UML Diagrams)</h5>
+            <p>Untuk memastikan tim pengembang memiliki pemahaman teknis yang seragam, saya merancang spesifikasi sistem menggunakan standar <em>Unified Modeling Language</em> (UML):</p>
+            <ul>
+              <li><strong>Use Case Diagram:</strong> Memetakan hak akses dan fungsionalitas aktor. Misalnya, Kasir memiliki akses <em>use case</em> 'Kelola Transaksi', sementara Admin Gudang terhubung dengan <em>use case</em> 'Input Barang Masuk' dan 'Update Stok'.</li>
+              <li><strong>Sequence Diagram:</strong> Menjabarkan interaksi objek secara kronologis. Salah satu fokus utama adalah <em>Sequence Diagram</em> untuk proses transaksi, di mana sistem harus memvalidasi ketersediaan stok di <em>database</em> sebelum mencetak struk pembayaran.</li>
+              <li><strong>Activity Diagram:</strong> Memodelkan aliran kerja (<em>workflow</em>) operasional harian Antony Mart untuk mendeteksi potensi <em>bottleneck</em> pada proses bisnis yang sudah ada.</li>
+            </ul>
+
+            <h5 class="mt-4">Perancangan Basis Data (Entity Relationship Diagram)</h5>
+            <p>Keberhasilan sistem manajemen ritel sangat bergantung pada integritas data. Saya merancang skema ERD relasional yang menghubungkan berbagai entitas krusial. Struktur ini mencakup tabel <code>Barang</code>, <code>Karyawan</code>, <code>Transaksi</code>, dan <code>Detail_Transaksi</code>. Relasi <em>One-to-Many</em> dan pemanfaatan <em>Foreign Key</em> diimplementasikan untuk memastikan tidak ada redundansi data, serta memungkinkan kueri pelaporan yang akurat bagi Pemilik (Owner).</p>
+
+            <div class="mt-5 text-center">
+              <a href="https://github.com/AryaSinambela" target="_blank" class="btn btn-outline-primary"><i class="bi bi-github"></i> Kunjungi Repositori Antony Mart</a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Arya Pratama Sinambela</strong> <span>All Rights Reserved<br></span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://x.com/SinambelaArya" target="_blank"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://web.facebook.com/profile.php?id=100025205535819" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/arya_sinambela" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/arya-pratama-sinambela" target="_blank"><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
