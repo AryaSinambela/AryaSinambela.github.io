@@ -34,6 +34,40 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  
+  <style>
+    header, 
+    .header, 
+    .header.sticky-top,
+    header.light-background {
+      border-bottom: none !important;
+      box-shadow: none !important;
+      background: #ffffff !important;
+    }
+
+    .navmenu {
+      position: relative;
+      z-index: 9999 !important;
+    }
+    
+    .navmenu .dropdown > ul {
+      z-index: 99999 !important;
+      background-color: #ffffff !important;
+      box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.1) !important;
+    }
+
+    @media (min-width: 1200px) {
+      .navmenu .dropdown:hover > ul {
+        opacity: 1 !important;
+        top: 100% !important;
+        visibility: visible !important;
+        display: block !important;
+      }
+      .navmenu .dropdown > ul {
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  </style>
 </head>
 
 <body class="contact-page">
@@ -45,7 +79,7 @@
         <h1 class="sitename">Arya P.S</h1>
       </a>
 
-<nav id="navmenu" class="navmenu">
+      <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
@@ -55,12 +89,12 @@
           <!-- Dropdown Konsisten yang Wajib Ada di Semua Halaman -->
           <li class="dropdown"><a href="#"><span>Github Documentation</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="portfolio.html?filter=backend">Backend Development</a></li>
-              <li><a href="portfolio.html?filter=uiux">UI/UX Documentation</a></li>
-              <li><a href="portfolio.html?filter=analysis">Systems Analysis &amp; Design</a></li>
+              <li><a href="backend-docs.html">Backend Development</a></li>
+              <li><a href="uiux-docs.html">UI/UX Documentation</a></li>
+              <li><a href="analysis-docs.html">Systems Analysis &amp; Design</a></li>
             </ul>
           </li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>

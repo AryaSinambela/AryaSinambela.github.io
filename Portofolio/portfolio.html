@@ -34,6 +34,40 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  
+  <style>
+    header, 
+    .header, 
+    .header.sticky-top,
+    header.light-background {
+      border-bottom: none !important;
+      box-shadow: none !important;
+      background: #ffffff !important;
+    }
+
+    .navmenu {
+      position: relative;
+      z-index: 9999 !important;
+    }
+    
+    .navmenu .dropdown > ul {
+      z-index: 99999 !important;
+      background-color: #ffffff !important;
+      box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.1) !important;
+    }
+
+    @media (min-width: 1200px) {
+      .navmenu .dropdown:hover > ul {
+        opacity: 1 !important;
+        top: 100% !important;
+        visibility: visible !important;
+        display: block !important;
+      }
+      .navmenu .dropdown > ul {
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  </style>
 </head>
 
 <body class="portfolio-page">
@@ -45,19 +79,19 @@
         <h1 class="sitename">Arya P.S</h1>
       </a>
 
-<nav id="navmenu" class="navmenu">
+      <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="resume.html">Resume</a></li>
           <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="portfolio.html" class="active">Portfolio</a></li>
           <!-- Dropdown Konsisten yang Wajib Ada di Semua Halaman -->
           <li class="dropdown"><a href="#"><span>Github Documentation</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="portfolio.html?filter=backend">Backend Development</a></li>
-              <li><a href="portfolio.html?filter=uiux">UI/UX Documentation</a></li>
-              <li><a href="portfolio.html?filter=analysis">Systems Analysis &amp; Design</a></li>
+              <li><a href="backend-docs.html">Backend Development</a></li>
+              <li><a href="uiux-docs.html">UI/UX Documentation</a></li>
+              <li><a href="analysis-docs.html">Systems Analysis &amp; Design</a></li>
             </ul>
           </li>
           <li><a href="contact.html">Contact</a></li>
@@ -83,7 +117,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Portfolio</h2>
-        <p>Kumpulan karya proyek akademik sistem informasi, rekayasa perangkat lunak backend, dan perancangan UI/UX[cite: 20].</p>
+        <p>Kumpulan karya proyek akademik sistem informasi, rekayasa perangkat lunak backend, dan perancangan UI/UX.</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -103,7 +137,7 @@
               <img src="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" class="img-fluid" alt="Del-Laundry Management System">
               <div class="portfolio-info">
                 <h4>Del-Laundry System</h4>
-                <p>Java Backend &amp; OOP Principles[cite: 20]</p>
+                <p>Java Backend &amp; OOP Principles</p>
                 <a href="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="Del-Laundry Management System" data-gallery="portfolio-gallery-backend" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
@@ -114,7 +148,7 @@
               <img src="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="Hotel Reservation System">
               <div class="portfolio-info">
                 <h4>Hotel Reservation System</h4>
-                <p>Multithreading &amp; PostgreSQL[cite: 20]</p>
+                <p>Multithreading &amp; PostgreSQL</p>
                 <a href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="Hotel Reservation System" data-gallery="portfolio-gallery-backend" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
@@ -125,7 +159,7 @@
               <img src="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid" alt="Health-Tracking Mobile App UI/UX">
               <div class="portfolio-info">
                 <h4>Health-Tracking App</h4>
-                <p>Figma Prototyping &amp; BPM Analysis[cite: 20]</p>
+                <p>Figma Prototyping &amp; BPM Analysis</p>
                 <a href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="Health-Tracking Mobile App UI/UX" data-gallery="portfolio-gallery-uiux" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
@@ -141,8 +175,7 @@
 
   </main>
 
-  <header id="header" class="header d-flex align-items-center light-background sticky-top">
-  </header>
+  <!-- Bagian header kosong di bawah ini sebaiknya dihapus agar tidak duplikat, saya bantu hapuskan -->
 
   <footer id="footer" class="footer light-background">
     <div class="container">

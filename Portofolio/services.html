@@ -34,6 +34,40 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  
+  <style>
+    header, 
+    .header, 
+    .header.sticky-top,
+    header.light-background {
+      border-bottom: none !important;
+      box-shadow: none !important;
+      background: #ffffff !important;
+    }
+
+    .navmenu {
+      position: relative;
+      z-index: 9999 !important;
+    }
+    
+    .navmenu .dropdown > ul {
+      z-index: 99999 !important;
+      background-color: #ffffff !important;
+      box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.1) !important;
+    }
+
+    @media (min-width: 1200px) {
+      .navmenu .dropdown:hover > ul {
+        opacity: 1 !important;
+        top: 100% !important;
+        visibility: visible !important;
+        display: block !important;
+      }
+      .navmenu .dropdown > ul {
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  </style>
 </head>
 
 <body class="services-page">
@@ -45,19 +79,19 @@
         <h1 class="sitename">Arya P.S</h1>
       </a>
 
-<nav id="navmenu" class="navmenu">
+      <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="resume.html">Resume</a></li>
-          <li><a href="services.html">Services</a></li>
+          <li><a href="services.html" class="active">Services</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
           <!-- Dropdown Konsisten yang Wajib Ada di Semua Halaman -->
           <li class="dropdown"><a href="#"><span>Github Documentation</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="portfolio.html?filter=backend">Backend Development</a></li>
-              <li><a href="portfolio.html?filter=uiux">UI/UX Documentation</a></li>
-              <li><a href="portfolio.html?filter=analysis">Systems Analysis &amp; Design</a></li>
+              <li><a href="backend-docs.html">Backend Development</a></li>
+              <li><a href="uiux-docs.html">UI/UX Documentation</a></li>
+              <li><a href="analysis-docs.html">Systems Analysis &amp; Design</a></li>
             </ul>
           </li>
           <li><a href="contact.html">Contact</a></li>
@@ -100,7 +134,7 @@
                 <i class="bi bi-code-slash"></i>
               </div>
               <h3 class="stretched-link">Backend Development</h3>
-              <p>Membangun arsitektur perangkat lunak sisi server yang andal dan aman menggunakan bahasa pemrograman Java dengan implementasi OOP terstruktur serta manajemen pemrograman konkuren (multithreading)[cite: 20].</p>
+              <p>Membangun arsitektur perangkat lunak sisi server yang andal dan aman menggunakan bahasa pemrograman Java dengan implementasi OOP terstruktur serta manajemen pemrograman konkuren (multithreading).</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -114,7 +148,7 @@
                 <i class="bi bi-database-fill-gear"></i>
               </div>
               <h3 class="stretched-link">Database Management</h3>
-              <p>Merancang skema relasional, memodelkan entitas data, serta mengelola sistem manajemen basis data (DBMS) menggunakan PostgreSQL dan pgAdmin 4 untuk menjamin kecepatan kueri dan integritas data aplikasi[cite: 20].</p>
+              <p>Merancang skema relasional, memodelkan entitas data, serta mengelola sistem manajemen basis data (DBMS) menggunakan PostgreSQL dan pgAdmin 4 untuk menjamin kecepatan kueri dan integritas data aplikasi.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -128,7 +162,7 @@
                 <i class="bi bi-diagram-3-fill"></i>
               </div>
               <h3 class="stretched-link">Systems Analysis</h3>
-              <p>Menganalisis alur bisnis dan merancang arsitektur sistem menggunakan pemodelan UML terperinci seperti Use Case Diagrams, skenario use case, dan Sequence Diagrams melalui siklus SDLC Waterfall[cite: 20].</p>
+              <p>Menganalisis alur bisnis dan merancang arsitektur sistem menggunakan pemodelan UML terperinci seperti Use Case Diagrams, skenario use case, dan Sequence Diagrams melalui siklus SDLC Waterfall.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -142,7 +176,7 @@
                 <i class="bi bi-vector-pen"></i>
               </div>
               <h3 class="stretched-link">UI/UX Design</h3>
-              <p>Mentransformasikan konsep aplikasi ke dalam visual tata letak halaman yang intuitif, pembuatan high-fidelity wireframes, rancangan visual CSS, serta prototipe interaktif menggunakan Figma[cite: 20].</p>
+              <p>Mentransformasikan konsep aplikasi ke dalam visual tata letak halaman yang intuitif, pembuatan high-fidelity wireframes, rancangan visual CSS, serta prototipe interaktif menggunakan Figma.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -156,7 +190,7 @@
                 <i class="bi bi-camera-reels-fill"></i>
               </div>
               <h3 class="stretched-link">Multimedia Production</h3>
-              <p>Membuat publikasi komunikasi visual digital, merancang aset media promosi kreatif, serta melakukan penyuntingan video yang dinamis untuk platform media sosial organisasi menggunakan Canva dan CapCut[cite: 20].</p>
+              <p>Membuat publikasi komunikasi visual digital, merancang aset media promosi kreatif, serta melakukan penyuntingan video yang dinamis untuk platform media sosial organisasi menggunakan Canva dan CapCut.</p>
             </div>
           </div><!-- End Service Item -->
 
